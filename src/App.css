@@ -3,18 +3,30 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 150px;
+  width: 150px;
   pointer-events: none;
+  border-radius: 50%;
+  color: red;
+  background: #0c4fd4;
+  border: 3px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  height: 100px;
+  width: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 40s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0c4fd4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

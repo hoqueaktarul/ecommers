@@ -76,7 +76,7 @@ export default function Products() {
                                     <div className="card-body">
                                         <h5 className="card-title mb-0">{product.title.substring(0, 12)}...</h5>
                                         <p className="card-text fw-bold">${product.price}</p>
-                                        <Link to={`/products/${product.id}`} className="btn  btn-outline-secondary">Buy Now</Link>
+                                        <Link to={`/product/${product.id}`} className="btn  btn-outline-secondary">Buy Now</Link>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ export default function Products() {
         )
     }
 
-    return (<div className="container my-2 py-2">
+    return (<div className="container " style={{marginTop:"80px"}}>
         <div className="row">
             <div className="col-12 mb-1">
                 <h1 className="display-6 fw-bolder text-center">Letest products</h1>

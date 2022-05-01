@@ -5,7 +5,8 @@ import Navber from "./component/Navbar";
 import {BrowserRouter, Routes,Route } from "react-router-dom"
 import Products from "./component/Products";
 import About from "./component/About";
-import Contact from "./component/About";
+import Contact from "./component/Contact";
+import Product from "./component/Product";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/products" element={<Products/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/products/:id" element={<Products/>}/>
+        <Route path="/product/:id" element={<Product/>}/>
 
 
       </Routes>

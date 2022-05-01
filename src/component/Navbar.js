@@ -28,9 +28,9 @@ export default function Navber() {
             </li>
           </ul>
           <div className="buttons">
-            <Link to="/" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>
-            <Link to="/" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={registerimg} alt="error"/>register</Link>
-            <Link to="/" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card(0)</Link>
+            <Link to="login" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>
+            <Link to="register" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={registerimg} alt="error"/>register</Link>
+            <Link to="card" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card(0)</Link>
           </div>
 
         </div>

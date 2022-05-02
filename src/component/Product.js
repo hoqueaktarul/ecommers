@@ -1,17 +1,20 @@
 import React ,{useState,useEffect}  from "react"
-import Skeleton from "react-loading-skeleton";
 import { useParams ,Link } from "react-router-dom"
 import star_logo from '../images/star_logo.png'
 import rupee_logo from '../images/rupee_logo.png'
+import { useDispatch } from "react-redux"
+import { addCard } from "../Redux/action"
 
 export default function Product (){
     const {id}=useParams();
-    const idobj=useParams();
 
     const [product,setproduct]=useState([]);
     const [loading ,setloading]=useState(false)
-    console.log(id)
-    console.log(idobj)
+    const dispach=useDispatch();
+    const addProduct=(product)=>{
+        dispach(addCard(product))
+    }
+   
 
     useEffect(()=>{
         const getproduct=async ()=>{
@@ -41,7 +44,7 @@ export default function Product (){
             </p>
             <h3 className="display-6 fw-bold my-4"><img className="" src={rupee_logo} height="35px" width="35px"/>{product.price} </h3>
             <p className="lead" >{product.description}</p>
-            <button className="btn  btn-info btn-outline-primary px-4 py-2 ">Add to Card</button>
+            <button className="btn  btn-info btn-outline-primary px-4 py-2  border-0" onClick={()=>addProduct(product)}>Add to Card</button>
             <Link to="/card" className="btn btn-info btn-outline-primary ms-2 px-3 py-2">gop to Card</Link>
 
         </div>

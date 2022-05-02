@@ -3,7 +3,9 @@ import registerimg from "../images/register_logo.png"
 import cartimg from "../images/cart_logo.png"
 import "../style/navbar.css"
 import { Link } from "react-router-dom"
+import { useSelector } from "react-redux"
 export default function Navber() {
+  const state=useSelector((state)=>state.handleCard)
 
   return (<div>
     <nav id="navbar_top" className="navbar navbar-expand-lg fixed-top navbar-light bg-secondary ">
@@ -30,7 +32,7 @@ export default function Navber() {
           <div className="buttons">
             <Link to="login" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>
             <Link to="register" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={registerimg} alt="error"/>register</Link>
-            <Link to="card" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card(0)</Link>
+            <Link to="card" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card({state.length})</Link>
           </div>
 
         </div>

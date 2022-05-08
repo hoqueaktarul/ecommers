@@ -12,3 +12,16 @@ export const delCard=(product)=>{
     }
 
 }
+export const delcardfull=(product)=>{
+    return{
+        type:"DELCARDALL",
+        payload:product
+    }
+}
+export const alldelCard=(product)=>{
+    return {
+        type:"ALLDELLITEM",
+        payload:product
+    }
+
+}

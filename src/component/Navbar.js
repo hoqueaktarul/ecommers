@@ -25,9 +25,9 @@ export default function Navber() {
             <li className="nav-item">
               <Link className="nav-link fw-bold" to="about">about</Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link fw-bold" to="contact">contact</Link>
-            </li>
+            </li> */}
           </ul>
           <div className="buttons">
             <Link to="login" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>

@@ -27,7 +27,15 @@ const card=[]
                 )
             }
 
-            break;     
+            break; 
+
+        case "DELCARDALL":
+            return state.filter((x)=>x.id!==product.id)
+            break    
+
+        case "ALLDELLITEM":
+            return state=[]
+            break      
         default :
 
              return state

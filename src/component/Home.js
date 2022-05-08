@@ -1,18 +1,94 @@
 import "../style/home.css"
-import men_home from '../images/men_home_final.png'
 import Products from "./Products"
+import { Link } from "react-router-dom";
+import men_home_img from "../images/men_home.png";
+import jewelary_home_img from "../images/jewelary_home.jpg";
+import electronic_home_img from "../images/electronic_home.png";
+import women_home_img from "../images/women_home.jpg";
 export default function Home() {
     return (
         <div className="hero home_main">
-            <div className="home_slider  mt-100">
-                <div className="card bg-dark text-white border-0 card_home  ">
-                    <img src={men_home} className="card-img" alt="error" height="350px" />
-                    <div className="card-img-overlay ">
+           <div
+      style={{ marginTop: "75px", display: "flex", justifyContent: "center" }}
+    >
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        {/* <!-- Indicators --> */}
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
-
-                    </div>
-                </div>
+        {/* <!-- Wrapper for slides --> */}
+        <div class="carousel-inner">
+          <div class="item active">
+            <Link to="/products">
+              <img
+                src={men_home_img}
+                alt="Los Angeles"
+                style={{ width: "100%" }}
+              />
+            </Link>
+            <div class="carousel-caption">
+              {/* <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p> */}
             </div>
+          </div>
+          <div class="item ">
+            <Link to="/products">
+              <img
+                src={women_home_img}
+                alt="Los Angeles"
+                style={{ width: "100%" }}
+              />
+            </Link>
+            <div class="carousel-caption">
+              {/* <h3>Los </h3>
+          <p>LA is always so much fun!</p> */}
+            </div>
+          </div>
+
+          <div class="item">
+            <Link to="/products">
+              <img
+                src={jewelary_home_img}
+                alt="Chicago"
+                style={{ width: "100%" }}
+              />
+            </Link>
+            <div class="carousel-caption">
+              {/* <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p> */}
+            </div>
+          </div>
+
+          <div class="item">
+            <Link to="/products">
+              <img
+                src={electronic_home_img}
+                alt="New York"
+                style={{ width: "100%" }}
+              />
+            </Link>
+            <div class="carousel-caption">
+              {/* <h3>New York</h3>
+          <p>We love the Big Apple!</p> */}
+            </div>
+          </div>
+        </div>
+
+        {/* <!-- Left and right controls --> */}
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
             <Products />
 
 

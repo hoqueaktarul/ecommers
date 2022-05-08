@@ -30,7 +30,6 @@ export default function Products() {
     const Loading = () => {
         return (
             <>
-                <h1>Loading........</h1>
                 <div>
                     <div className="col-md-3">
                         <Skeleton height={250} />

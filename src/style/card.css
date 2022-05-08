@@ -328,7 +328,6 @@ section.about .social a:hover {
   justify-content: space-around;
   align-items: center;
   width: 70px;
-  height: 400px;
 }
 .social1{
   position: absolute;
@@ -340,7 +339,6 @@ section.about .social a:hover {
   justify-content: space-around;
   align-items: center;
   width: 70px;
-  height: 400px;
 }
 .about{
   height: 60px;
@@ -354,4 +352,20 @@ section.about .social a:hover {
 .about:hover{
   background-color:#3dcfd3 ;
 
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 3.5rem;
+    font-size: 15px;
+    padding: 0 20px;
+}
+.fw-bold{
+  font-size: 15px;
+}
+.about_img_main{
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%);
 }

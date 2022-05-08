@@ -18,6 +18,10 @@ export default function Register(){
                         </div>
 
                         <div class="mb-3 col-md-12">
+                            <label>Email<span class="text-danger">*</span></label>
+                            <input required type="email" name="email" class="form-control" placeholder="Enter email address"/>
+                        </div>
+                        <div class="mb-3 col-md-12">
                             <label>Password<span class="text-danger">*</span></label>
                             <input required type="password" name="password" class="form-control" placeholder="Enter Password"/>
                         </div>

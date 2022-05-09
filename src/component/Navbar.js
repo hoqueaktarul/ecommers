@@ -30,9 +30,9 @@ export default function Navber() {
             </li> */}
           </ul>
           <div className="buttons">
-            <Link to="login" className="btn  me-2 fw-bold border-0 nav_btn"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>
-            <Link to="register" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={registerimg} alt="error"/>register</Link>
-            <Link to="card" className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card({state.length})</Link>
+            <Link to="login" style={{fontSize:"13px"}}  className="btn   me-2 fw-bold border-0 nav_btn"><img className="navlogo" src={loginimg} alt="error"/>log in</Link>
+            <Link to="register" style={{fontSize:"13px"}} className="btn  me-2 fw-bold border-0"><img className="navlogo" src={registerimg} alt="error"/>register</Link>
+            <Link to="card" style={{fontSize:"13px"}} className="btn  me-2 fw-bold border-0"><img className="navlogo" src={cartimg} alt="error"/>card({state.length})</Link>
           </div>
 
         </div>

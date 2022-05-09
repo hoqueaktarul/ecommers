@@ -66,6 +66,7 @@ function Car() {
                             <img
                               className="card_item_cantainer_up_right_rupe_logo"
                               src={rupee_logo}
+                              alt="images not found"
                             />
                             <h3>{item.price}</h3>
                           </div>

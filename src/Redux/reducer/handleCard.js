@@ -15,7 +15,7 @@ const card=[]
                     ...state, {...product, qty:1}
                 ]
             }
-            break;
+
          
         case "DELLITEM":
             const exit1=state.find((x)=>x.id===product.id)
@@ -27,19 +27,15 @@ const card=[]
                 )
             }
 
-            break; 
 
         case "DELCARDALL":
             return state.filter((x)=>x.id!==product.id)
-            break    
 
         case "ALLDELLITEM":
             return state=[]
-            break      
         default :
 
              return state
-             break;
     }
 }
 export default handleCard;

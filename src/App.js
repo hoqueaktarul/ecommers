@@ -1,8 +1,8 @@
 // import './App.css';
 
 import Home from "./component/Home";
-import Navber from "./component/Navbar";
-import {BrowserRouter, Routes,Route } from "react-router-dom"
+import Navbar from "./component/Navbar";
+import { Routes,Route } from "react-router-dom"
 import Products from "./component/Products";
 import About from "./component/About";
 import Contact from "./component/Contact";
@@ -15,7 +15,7 @@ import Register from "./component/Register";
 function App() {
   return (
     <div className="App">
-      <Navber/>
+      <Navbar/>
 
       <Routes>
         <Route path="/" element={<Home/>}/>

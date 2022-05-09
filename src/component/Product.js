@@ -26,7 +26,7 @@ export default function Product (){
         }
         getproduct()
 
-    },[])
+    },[id])
 
     const Loading=()=>{
         return(<><Skeleton height={"350px"} width="80%"/></>)
@@ -41,9 +41,9 @@ export default function Product (){
             <h1 className="display-5">{product.title}</h1>
             <p className="lead fw-bolder">
                 Rating {product.rating && product.rating.rate}{" "}
-                <img src={star_logo} width="20px" height="20px" />
+                <img src={star_logo} width="20px" height="20px" alt="images not found" />
             </p>
-            <h3 className="display-6 fw-bold my-4"><img className="" src={rupee_logo} height="35px" width="35px"/>{product.price} </h3>
+            <h3 className="display-6 fw-bold my-4"><img className="" src={rupee_logo} alt="images not found" height="35px" width="35px"/>{product.price} </h3>
             <p className="lead" >{product.description}</p>
             <button className="btn  btn-info btn-outline-primary px-4 py-2  border-0" onClick={()=>addProduct(product)}>Add to Card</button>
             <Link to="/card" className="btn btn-info btn-outline-primary ms-2 px-3 py-2">go to Card</Link>

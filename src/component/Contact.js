@@ -1,6 +1,5 @@
 export default function Contact(){
-    return(<div style={{marginTop:"0px",background:"gainsboro",height:"100vh"}} >
-        <a  href="/about"></a>
+    return(<div className="about_main" style={{marginTop:"0px",background:"gainsboro",height:"100vh"}} >
        
 
     </div>)

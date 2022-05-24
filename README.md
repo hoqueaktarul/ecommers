@@ -1,1 +1,3 @@
-link:https://nimble-biscotti-cd385c.netlify.app/product/3
+
+
+for demo link:https://nimble-biscotti-cd385c.netlify.app
